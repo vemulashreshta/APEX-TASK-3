@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Webpage with Carousel & API</title>
+  <link rel="stylesheet" href="advanced.css"/>
+</head>
+<body>
+  <header>
+    <h1>My Responsive Webpage</h1>
+  </header>
+
+  <!-- Image Carousel -->
+  <section class="carousel-section">
+    <h2>Image Carousel</h2>
+    <div class="carousel">
+      <img id="carousel-img" src="https://picsum.photos/id/1018/600/400" alt="Carousel Image"/>
+      <div class="buttons">
+        <button onclick="prevImage()">Previous</button>
+        <button onclick="nextImage()">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Joke API Section -->
+  <section class="api-section">
+    <h2>Get a Random Joke</h2>
+    <button onclick="fetchJoke()">Get Joke</button>
+    <p id="joke-output">Click the button to load a joke...</p>
+  </section>
+
+  <script src="advanced.js"></script>
+</body>
+</html>
